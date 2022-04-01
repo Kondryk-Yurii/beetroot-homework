@@ -2,10 +2,40 @@
   box-sizing: border-box;
 }
 
-.header {
-  background-color: #aaafb8;
+body {
+  background-color: #c4c5c7;
+  font-family: Inter;
 }
 
-h1 {
+.header {
+  text-align: center;
+  font-size: 25px;
+}
+
+.list {
+  max-width: 1000px;
+  background-color: aliceblue;
+  margin: 0 auto;
+  font-size: 25px;
+  border: 5px solid black;
+  border-radius: 30px;
+  padding: 20px;
+  font-weight: 800;
+}
+
+li {
+  line-height: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
   color: red;
 }
