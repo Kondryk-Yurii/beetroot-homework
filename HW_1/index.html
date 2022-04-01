@@ -5,69 +5,184 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HW 1</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;500;600;800&amp;family=Montserrat:wght@100;300;700&amp;family=Roboto+Slab:wght@100;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Возврат на главную страницу -->
-    <a href="../index.html">Home</a>
+
     <!-- Резюме -->
-    <h1>Кондрик Юрий Александрович</h1>
-    <h2>Аналитик компьютерных систем</h2>
-    <p>Дата рождения: 16 октября 1994 (27 лет)</p>
-    <p>Город: Кременчуг</p>
-    <img src="./image/1.jpg" alt="photo" />
-    <h3>Опыт работы</h3>
-    <ul>
-      <li>
-        04.2018 – по настоящее время: Аналитик компьютерных систем, ООО «Укравиасервис», г.
-        Кременчуг
-      </li>
-      <li>09.2017 – 04.2018: Аналитик компьютерных систем, ООО «АТЗК Борисполь», г. Кременчуг</li>
-    </ul>
-    <h3>Образование</h3>
-    <ul>
-      <li>
-        <p>ХАИ</p>
-        <p>Автоматизация и компьютерно-интегрированные технологии</p>
-        <p>Компьютерные системы технического зрения (магистр)</p>
-        <p>09.2017 - 12.2018</p>
-      </li>
-      <li>
-        <p>ХАИ</p>
-        <p>Системная инженерия</p>
-        <p>Техник с конфигурированной компьютерной системы (бакалавр)</p>
-        <p>09.2013 - 06.2017</p>
-      </li>
-      <li>
-        <p>КЛК НАУ</p>
-        <p>Эксплуатация авиационных электрифицированных комплексов</p>
-        <p>Техник АиРЭО</p>
-        <p>09.2009 - 06.2013</p>
-      </li>
-    </ul>
-    <h3>Владение языками</h3>
-    <ul>
-      <li>Украинский</li>
-      <li>Русский</li>
-      <li>Английский</li>
-    </ul>
-    <h3>Личные качества</h3>
-    <p>
-      Пунктуальность, аккуратность, усидчивость, внимательность, чувство собственного достоинства,
-      коммуникабельность, тактичность, трудолюбие, ответственность.
-    </p>
-    <h3>Социальные сети</h3>
-    <ul>
-      <li>
-        <a href="https://www.facebook.com/yurok.kondrik">Facebook</a>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/yurii_it/">Instagram</a>
-      </li>
-    </ul>
-    <h3>Контакты</h3>
-    <ul>
-      <li>Моб.: +380682504638</li>
-      <li>E-mail: kondryk.yurii@gmail.com</li>
-    </ul>
+    <header class="header">
+      <a class="come-back" href="../index.html">Home</a>
+    </header>
+    <div class="resume">
+      <div class="colum-1">
+        <div class="profile">
+          <div class="photo">
+            <img class="my-photo" src="./image/1.jpg" alt="" />
+          </div>
+          <div class="info">
+            <h2>Kondryk Yurii</h2>
+            <p class="csa">Computer systems analyst</p>
+            <p>
+              <img class="icon-1" src="./image/phone.png" alt="" />
+              +38 0682504638
+            </p>
+            <p>
+              <img class="icon-1" src="./image/mail.png" alt="" />
+              kondryk.yurii@gmail.com
+            </p>
+            <p>
+              <img class="icon-1" src="./image/location.png" alt="" />
+              Kremenchuk, Ukraine
+            </p>
+          </div>
+        </div>
+        <div class="education pt">
+          <p class="top-icon">
+            <img class="icon" src="./image/education.png" alt="" />
+            <span>EDUCATION</span>
+          </p>
+          <div class="education-list">
+            <ul>
+              <li>
+                <h3>KhAI</h3>
+                <p>Automation and computer-integrated technologies</p>
+                <p>Computer Vision Systems (Master)</p>
+                <p>09.2017 - 12.2018</p>
+              </li>
+              <li>
+                <h3>KhAI</h3>
+                <p>Systems Engineering</p>
+                <p>Technician with a configured computer system (Bachelor)</p>
+                <p>09.2013 - 06.2017</p>
+              </li>
+              <li>
+                <h3>KFK NAY</h3>
+                <p>Operation of aviation electrified complexes</p>
+                <p>AiREO Technician</p>
+                <p>09.2009 - 06.2013</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="work pt">
+          <p class="top-icon">
+            <img class="icon" src="./image/work.png" alt="" />
+            <span>WORK</span>
+          </p>
+          <div class="work-list">
+            <ul>
+              <li>
+                04.2018 – present: Analyst of computer systems, Ukraviaservice LLC, Kremenchug
+              </li>
+              <li>09.2017 – 04.2018: Analyst of computer systems, ATZK Boryspil LLC, Kremenchug</li>
+            </ul>
+          </div>
+        </div>
+        <div class="hobbies pt">
+          <p class="top-icon">
+            <img class="icon" src="./image/hobbies.png" alt="" />
+            <span>HOBBIES AND INTERESTS</span>
+          </p>
+          <div class="hobbies-list">
+            <ul>
+              <li>Cycling</li>
+              <li>Swimming</li>
+              <li>Travels</li>
+              <li>Games</li>
+            </ul>
+          </div>
+        </div>
+        <div class="languages pt">
+          <p class="top-icon">
+            <img class="icon" src="./image/languages.png" alt="" />
+            <span>LANGUAGESS</span>
+          </p>
+
+          <div class="languages-list">
+            <ul>
+              <li>Ukrainian</li>
+              <li>Russian</li>
+              <li>English</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="colum-2">
+        <div class="“">
+          <div class="“-icon">
+            <img class="icon-2" src="./image/“.png" alt="" />
+          </div>
+          <p>
+            Dedicated and passionate Web Developer with excellent learning skills and getting
+            experience in building Web Applications and making websites user friendly. Looking
+            forward to an exciting opportunity and development experience in a challenging role as a
+            Front-End Developer.
+          </p>
+        </div>
+        <div class="technical-skills title">
+          <p>TECHNICAL SKILLS</p>
+          <div class="technical-skills-list">
+            <ul>
+              <li>FRONT-END TECHNOLOGY: HTML5, CSS3, JavaScript</li>
+              <li>DESIGN FRAMEWORK: Figma</li>
+              <li>TOOLS: Git, GitHub</li>
+            </ul>
+          </div>
+        </div>
+        <div class="personal-skills title">
+          <p>PERSONAL SKILLS</p>
+          <div class="personal-skills-list">
+            <ul>
+              <li>
+                <p>Logical Reasoning</p>
+                <img class="skill" src="./image/5.png" alt="" />
+              </li>
+              <li>
+                <p>Communication</p>
+                <img class="skill" src="./image/4.png" alt="" />
+              </li>
+              <li>
+                <p>Creative</p>
+                <img class="skill" src="./image/4.png" alt="" />
+              </li>
+              <li>
+                <p>Adaptability</p>
+                <img class="skill" src="./image/4.png" alt="" />
+              </li>
+              <li>
+                <p>Mangenment</p>
+                <img class="skill" src="./image/4.png" alt="" />
+              </li>
+              <li>
+                <p>Online Collaboration</p>
+                <img class="skill" src="./image/5.png" alt="" />
+              </li>
+              <li>
+                <p>Team Collaboration</p>
+                <img class="skill" src="./image/5.png" alt="" />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="follow title">
+          <p>FOLLOW ME</p>
+          <div class="follow-list">
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/yurii_it/" target="blank">Instagram</a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/yurok.kondrik" target="blank">Facebook</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
