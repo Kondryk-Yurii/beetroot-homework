@@ -1,0 +1,152 @@
+/* ВСЁ ЧТО ЗАКОМЕНТИРОВАНО ДЕЛАЛОСЬ С РОМАНОМ */
+/* ПЕРЕДЕЛАНО С ПОЛУЧЕНИЕМ НОВЫХ ЗНАНИЙ */
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --frame: 5px;
+    --c-body: #2782ae;
+    --c-white: #fff;
+    --c-lisbon: #2f9acd;
+    --c-paris: #2fcdcd;
+    --c-belgrade: #9a669a;
+    --c-venice: #c34545;
+    --c-tel-aviv: #e36749;
+    --c-kyiv: #ffcd66;
+    --c-new-york: #9acd9a;
+    --c-new-delhi: #669a9a;
+    --c-san-francisco: #cd669a;
+    --c-tokyo: #2f9a66;
+    --c-sydney: #66669a;
+}
+
+body {
+    margin: 0;
+    background: var(--c-body);
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--c-white);
+}
+
+.wrap {
+    max-width: 1400px;
+    background-color: var(--c-lisbon);
+    margin: 0 auto;
+    padding: 5px 215px;
+}
+
+.container_list {
+    background: white;
+    /* padding: 5px; */
+    padding: var(--frame);
+}
+
+.cityes {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+    /* margin-left: -5px;
+    margin-bottom: -5px; */
+    margin-left: calc(0px - var(--frame));
+    margin-bottom: calc(0px - var(--frame));
+}
+
+.col {
+    display: inline-block;
+    font-size: initial;
+    /* margin-left: 5px;
+    margin-bottom: 5px; */
+    margin-left: var(--frame);
+    margin-bottom: var(--frame);
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.col p {
+    margin: 10px;
+}
+
+.col p:last-of-type {
+    opacity: .8;
+}
+
+/* Размер ячеек */
+.col-1 {
+    /* width: calc(25% - 5px); */
+    width: calc(25% - var(--frame));
+}
+
+.col-2 {
+    /* width: calc(50% - 5px); */
+    width: calc(50% - var(--frame));
+}
+
+.col-4 {
+    /* width: calc(100% - 5px); */
+    width: calc(100% - var(--frame));
+    background: var(--c-sydney);
+}
+
+/* Цвата ячеек */
+.col1-1 {
+    background: var(--c-lisbon);
+}
+
+.col1-2 {
+    background: var(--c-paris);
+}
+
+.col1-3 {
+    background: var(--c-belgrade);
+}
+
+.col2-1 {
+    background: var(--c-venice);
+}
+
+.col2-2 {
+    background: var(--c-tel-aviv);
+}
+
+.col2-3 {
+    background: var(--c-kyiv);
+}
+
+.col2-4 {
+    background: var(--c-new-york);
+}
+
+.col3-1 {
+    background: var(--c-new-delhi);
+}
+
+.col3-2 {
+    background: var(--c-san-francisco);
+}
+
+.col3-3 {
+    background: var(--c-tokyo);
+}
+
+/* Размер иконок */
+.wi {
+    font-size: 35px;
+}
+
+/* Footer */
+footer {
+    font-size: 20px;
+}
+
+/* Анимация */
+.container_list:hover .col {
+    opacity: 0.6;
+}
+
+.container_list:hover .col:hover {
+    opacity: 1;
+}

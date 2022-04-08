@@ -1,0 +1,56 @@
+Задание
+!!! При верстке иcпользовать свойства блока inline-block
+
+Прежде чем выполнять это задание
+ - выполнить задание 004/index.html, 004/inline.html
+
+------------------------------------------------------------
+
+1. Создать index.html, каталоги css, img
+
+2. Создать файл  css/normalize.css и подключить его в index.html
+
+
+3. Создать файл  css/style.css и подключить его в index.html
+
+4. Сверстать “Прогноз погоды” согласно макета в файле
+        css-weather-forecast-psd.png
+
+ и заданию указанному после видеоурока
+    Lesson 5 - Блочная модель документа (CSS Box Model ) в LMS
+	
+-------------------------   из LMS
+https://erikflowers.github.io/weather-icons
+
+Видео инструкций 
+  https://www.youtube.com/watch?v=g9O7boOJzq4
+Требования:
+
+1.	Города это список
+
+2.	НЕ ИСПОЛЬЗОВАТЬ FLOAT!
+
+3.	Для размещения в “сетку” городов используем display: inline-block;
+
+4.	Ширину каждого пункта делать в процентах (например: width: 50%)
+
+5.	Для эффекта смены прозрачности используем :hover и opacity
+
+6.	Иконки берем от сюда 
+https://erikflowers.github.io/weather-icons/
+
+   подключить иконки нужно прописав в <head>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.5/css/weather-icons.min.css">
+
+7.	Цвета определяйте с помощью “pixie”, или другого похожего инструмента
+
+8.	Шрифт: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif
+
+9.	Favicon возьмите здесь 
+http://academy.alexcss.com/wp-content/uploads/2015/09/favicon.png
+
+Решение размещать в папке css-weather-forecast
+
+
+
+

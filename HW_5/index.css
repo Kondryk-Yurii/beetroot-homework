@@ -36,6 +36,7 @@ input {
   color: var(--header-button-text-c);
   padding: 19px 0 12px 0;
   text-align: center;
+  cursor: default;
 }
 
 .header__title {
