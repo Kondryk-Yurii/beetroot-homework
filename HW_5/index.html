@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Normalize -->
+    <link rel="stylesheet" href="./normalize.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Style -->
+    <link rel="stylesheet" href="./index.css" />
+    <!-- Favicon -->
+    <link rel="icon" href="./image/icon.png" />
+  </head>
+  <body>
+    <!-- Возврат на главную страницу -->
+    <div class="home">
+      <a href="../index.html">Home</a>
+    </div>
+    <!-- Shopping List -->
+    <!-- Header -->
+    <header class="header">
+      <h1 class="header__title">CSS Dinner Shopping List</h1>
+      <div class="header__text">Let’s go to the mall!</div>
+    </header>
+    <!-- List -->
+    <main class="main">
+      <div>
+        <form class="form">
+          <ul class="list">
+            <li class="list__item">
+              <label class="list__input" for="check1">
+                <input type="checkbox" id="check1" name="check1" value="pickles" />
+                <span class="list__check"></span>
+                <span class="list__b-text">A lot of pickles</span>
+                <span class="list__s-text">for the next lessons about CSS</span>
+              </label>
+            </li>
+            <li class="list__item">
+              <label class="list__input" for="check2">
+                <input type="checkbox" id="check2" name="check2" value="apple" />
+                <span class="list__check"></span>
+                <span class="list__b-text">10 apples</span>
+                <span class="list__s-text">for more CSS manipulations</span>
+              </label>
+            </li>
+            <li class="list__item">
+              <label class="list__input" for="check3">
+                <input type="checkbox" id="check3" name="check3" value="orange" />
+                <span class="list__check"></span>
+                <span class="list__b-text">20 oranges</span>
+                <span class="list__s-text">because they are awesome</span>
+              </label>
+            </li>
+            <li class="list__item">
+              <label class="list__input" for="check4">
+                <input type="checkbox" id="check4" name="check4" value="plate" />
+                <span class="list__check"></span>
+                <span class="list__b-text">13 plates</span>
+                <span class="list__s-text">hm... they always dissapear</span>
+              </label>
+            </li>
+            <li class="list__item">
+              <label class="list__input" for="check5">
+                <input type="checkbox" id="check5" name="check5" value="bentos" />
+                <span class="list__check"></span>
+                <span class="list__b-text">15 bentos</span>
+              </label>
+            </li>
+            <li class="list__item">
+              <label class="list__input" for="check6">
+                <input type="checkbox" id="check6" name="check6" value="bottle" />
+                <span class="list__check"></span>
+                <span class="list__b-text">1 bottle of Sake</span>
+                <span class="list__s-text">for my friends</span>
+              </label>
+            </li>
+          </ul>
+          <button class="button" type="submit">
+            <span>Bon appetit :)</span>
+          </button>
+        </form>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer"></footer>
+  </body>
+</html>

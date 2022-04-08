@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: all 0.1s ease-in;
+}
+
+:root {
+  --header-button-background-c: #4a4f56;
+  --header-button-text-c: #ff8984;
+  --background-c: #3b3f45;
+  --list-hover-c: #625e77;
+  --list1-c: #88839e;
+  --list2-c: #7a7593;
+  --text-c: #ffffff;
+  --cheched-c: #9b96ac;
+}
+
+body {
+  background-color: var(--background-c);
+  font-family: "Roboto", sans-serif;
+}
+
+input {
+  display: none;
+}
+
+/* Возврат на главную страницу */
+.home {
+  background-color: var(--text-c);
+}
+
+/* Header */
+.header {
+  background-color: var(--header-button-background-c);
+  color: var(--header-button-text-c);
+  padding: 19px 0 12px 0;
+  text-align: center;
+}
+
+.header__title {
+  margin: 0 0 4px 0;
+  line-height: 28px;
+  font-size: 24px;
+}
+
+.header__text {
+  line-height: 19px;
+  font-size: 16px;
+}
+
+/* List */
+.main {
+  max-width: 534px;
+  margin: 0 auto;
+}
+
+.list {
+  color: var(--text-c);
+  margin: 20px 0 45px 0;
+}
+
+.list__item {
+  list-style-type: none;
+  height: 45px;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  display: flex;
+  align-items: center;
+}
+
+.list__item:nth-child(2n-1) {
+  background-color: var(--list1-c);
+}
+
+.list__item:nth-child(2n) {
+  background-color: var(--list2-c);
+}
+
+.list__item:hover {
+  border-top: 2px solid var(--text-c);
+  border-bottom: 2px solid var(--text-c);
+  background-color: var(--list-hover-c);
+}
+
+.list__item:active {
+  background-color: var(--header-button-text-c);
+}
+
+/* Checkbox */
+.list__input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.list__check {
+  width: 19px;
+  height: 19px;
+  margin: 0 16px 0 12px;
+  background-color: var(--text-c);
+}
+
+/* Text */
+.list__b-text {
+  font-size: 18px;
+  line-height: 21px;
+  margin-right: 10px;
+}
+
+.list__s-text {
+  font-size: 11px;
+  line-height: 16px;
+}
+
+.list__s-text::before {
+  content: "(";
+}
+
+.list__s-text::after {
+  content: ")";
+}
+
+/* Checked */
+input:checked ~ span {
+  color: var(--cheched-c);
+  text-decoration: line-through;
+}
+
+input:checked + span {
+  content: url(./image/v.png);
+  padding: 4px 3px;
+}
+
+/* Button */
+.button {
+  background-color: var(--header-button-background-c);
+  color: var(--header-button-text-c);
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  line-height: 21px;
+  height: 45px;
+  border: none;
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: var(--header-button-text-c);
+  color: var(--text-c);
+}

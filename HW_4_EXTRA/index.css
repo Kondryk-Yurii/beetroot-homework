@@ -8,7 +8,7 @@
 body {
   background-color: #e5e5e5;
 }
-/*  */
+/* Возврат на главную страницу */
 .header a {
   display: inline-block;
   text-decoration: none;
@@ -25,6 +25,7 @@ body {
   border: 2px solid #42489e;
 }
 
+/* Resume */
 .resume {
   width: 1000px;
   margin: auto;
@@ -74,7 +75,7 @@ h2 {
 .info {
   padding-left: 30px;
 }
-/*  */
+
 .pt {
   padding-top: 50px;
 }
@@ -142,7 +143,6 @@ li {
 
 a {
   color: white;
-  /* text-decoration: none; */
   font-size: 20px;
 }
 
