@@ -1,69 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Productly</title>
     <!-- Normalize -->
-    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./normalize.css" />
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- font-family: 'Poppins', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Styles -->
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index.css" />
     <!-- Favicon -->
-    <link rel="icon" href="./image/icon.png">
-</head>
-<body>
-    <div class="container">
-        <header class="header">
-            <div class="header__logo">
-                <img src="./image/logo.svg" alt="Productly">
-            </div>
+    <link rel="icon" href="./image/icon.png" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Header -->
+      <header class="header">
+        <div class="container header__wrapper">
+          <div class="header__logo">
+            <img src="./image/logo.svg" alt="Productly" />
+          </div>
+          <div class="header__content">
             <nav class="navigation">
-                <ul class="navigation__list">
-                    <li class="navigation__item">Product</li>
-                    <li class="navigation__item">Customers</li>
-                    <li class="navigation__item">Pricng</li>
-                    <li class="navigation__item">Resources</li>
-                </ul>
+              <ul class="navigation__list">
+                <li class="navigation__item">
+                  <a href="">Product</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="">Customers</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="">Pricng</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="">Resources</a>
+                </li>
+              </ul>
             </nav>
-            <button class="sing-in">
+            <div class="header__button">
+              <button class="button sing-in" type="button">
                 <span>Sign In</span>
-            </button>
-            <button class="sing-up">
+              </button>
+              <button class="button sing-up" type="button">
                 <span>Sign Up</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Bunner -->
+      <section class="bunner">
+        <div class="container bunner__wrapper">
+          <div class="bunner__content">
+            <h1 class="bunner__title">The Design Thinking superpowers</h1>
+            <p class="bunner__text">
+              Tools, tutorials, design and innovation experts, all in one place! The most intuitive
+              way to imagine your next user experience.
+            </p>
+            <div class="bunner__link">
+              <button class="button" type="button">
+                <span>Get started</span>
+              </button>
+              <div>
+                <a class="button__link" href="#">Watch the Video</a>
+              </div>
+            </div>
+          </div>
+          <div class="bunner__img">
+            <img src="./image/bunner.svg" alt="People" />
+          </div>
+        </div>
+      </section>
+      <!-- TOOLS -->
+      <section class="tools">
+        <div class="container tools__wrapper">
+          <h2 class="tools__title">We design tools to unveil your superpowers</h2>
+          <div class="tools__content">
+            <div class="tools__card card">
+              <div class="card__icon">
+                <img src="./image/icon-1.svg" alt="icon" />
+              </div>
+              <h3 class="card__title">First click tests</h3>
+              <p class="card__text">While most people enjoy casino gambling.</p>
+            </div>
+            <div class="tools__card">
+              <div class="tools__card card">
+                <div class="card__icon">
+                  <img src="./image/icon-2.svg" alt="icon" />
+                </div>
+                <h3 class="card__title">Design surveys</h3>
+                <p class="card__text">Sports betting, lottery and bingo playing for the fun.</p>
+              </div>
+            </div>
+            <div class="tools__card">
+              <div class="tools__card card">
+                <div class="card__icon">
+                  <img src="./image/icon-3.svg" alt="icon" />
+                </div>
+                <h3 class="card__title">Preference tests</h3>
+                <p class="card__text">The Myspace page defines the individual.</p>
+              </div>
+            </div>
+            <div class="tools__card">
+              <div class="tools__card card">
+                <div class="card__icon">
+                  <img src="./image/icon-4.svg" alt="icon" />
+                </div>
+                <h3 class="card__title">Five second tests</h3>
+                <p class="card__text">
+                  Personal choices and the overall personality of the person.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tools__button">
+            <button class="button" type="button">
+              <span>SIGN UP NOW</span>
             </button>
-        </header>
-        <main>
-            <section class="superpowers">
-                <div class="superpowers__content">
-                    <h1 class="superpowers__title">
-                        The Design Thinking superpowers
-                    </h1>
-                    <p class="superpowers__text">
-                        Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.
-                    </p>
-                    <div class="superpowers__link">
-                        <div>
-                            <button class="button">
-                                <span>Get started</span>
-                            </button>
-                        </div>
-                        <div>
-                            <a href="#">Watch the Video</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="superpowers__img">
-                    <img src="./image/superpowers__img.svg" alt="People">
-                </div>
-            </section>
-        </main>
-        <footer class="footer"></footer>
+          </div>
+        </div>
+      </section>
+      <!-- DESIGN -->
+      <section class="design">
+        <div class="container design__wrapper">
+          <div class="design__content content">
+            <span>Effortless Validation for</span>
+            <h2 class="design__title">Design Professionals</h2>
+            <p class="design__text text">
+              The Myspace page defines the individual, his or her characteristics, traits, personal
+              choices and the overall personality of the person.
+            </p>
+            <h3>Accessory makers</h3>
+            <p class="text__paragraph">
+              While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun.
+            </p>
+            <h3>Alterationists</h3>
+            <p class="text__paragraph">
+              If you are looking for a new way to promote your business that won’t cost you more money.
+            </p>
+            <h3>Custom Design designers</h3>
+            <p class="text__paragraph">
+              If you are looking for a new way to promote your business that won’t cost you more money. 
+            </p>
+        </div>
+        <div class="design__img">
+          <img src="./image/design.svg" alt="People" />
+        </div>
+      </section>
+      <!-- PRODUCT -->
+      <section class="product">
+        <div class="container product__wrapper">
+          <div class="product__img">
+            <img src="./image/product.svg" alt="People" />
+          </div>
+          <div class="product__content content">
+            <span>Easier decision making for</span>
+            <h2 class="product__title">Product Managers</h2>
+            <p class="product__text text">
+              The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person. 
+            </p>
+            <div class="product__list list">
+              <div class="list__item">
+                <img class="list__icon" src="./image/list-icon.svg" alt="icon">
+                <p>Never worry about overpaying for your energy again.</p>
+              </div>
+              <div class="list__item">
+                <img class="list__icon" src="./image/list-icon.svg" alt="icon">
+                <p>We will only switch you to energy companies that we trust and will treat you right.</p>
+              </div>
+              <div class="list__item">
+                <img class="list__icon" src="./image/list-icon.svg" alt="icon">
+                <p>We track the markets daily and know where the savings are.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- MARKETERS -->
+      <section class="marketers">
+        <div class="container design__wrapper">
+          <div class="design__content content">
+            <span>Optimisation for</span>
+            <h2 class="marketers__title">Marketers</h2>
+            <p class="marketers__text text">
+              Few would argue that, despite the advancements of feminism over the past three decades, women still face a double standard when it comes to their behavior. 
+            </p>
+            <h3>Accessory makers</h3>
+            <p class="text__paragraph">
+              While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun.
+            </p>
+            <h3>Alterationists</h3>
+            <p class="text__paragraph">
+              If you are looking for a new way to promote your business that won’t cost you more money.
+            </p>
+            <h3>Custom Design designers</h3>
+            <p class="text__paragraph">
+              If you are looking for a new way to promote your business that won’t cost you more money. 
+            </p>
+        </div>
+        <div class="design__img">
+          <img src="./image/marketers.svg" alt="People" />
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container footer__wrapper">
+            <div class="footer__logo">
+              <img src="./image/logo.svg" alt="Productly" />
+          </div>
+          <div class="footer__content">
+            <nav class="footer__nav nav">
+              <div class="nav__column nav__column--1">
+                <a href="">About Us</a>
+                <a href="">Blog</a>
+                <a href="">Contact</a>
+                <a href="">FAQ</a>               
+              </div>
+              <div class="nav__column nav__column--2">
+                <a href="">Disclaimer</a>
+                <a href="">Financing</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Terms of Service</a>               
+              </div>
+            </nav>
+            <div class="footer__form">
+              <form action="">
+                <input type="text">
+              </form>
+              <button class="button" type="button">
+                <span>Sign up Now</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
